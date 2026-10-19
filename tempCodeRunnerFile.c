@@ -1,24 +1,32 @@
 #include <stdio.h>
 int main(){
-    char ch ;
+  int a , b , c;
+  scanf("%d %d %d",&a,&b,&c);
+  //min
+   if(a<=b && a<=c ){
+    printf("%d ",a);
+   }
+   
+ else if(b<=a&&b<=c){
+        printf("%d ",b);
+      }
+ else if(c<=a&&c<=b){
+        printf("%d ",c);
+      }
+
+      //max valu
+ if(a>=b && a>=c ){
+    printf("%d ",a);
+   }
+   
+ else if(b>=a&&b>=c){
+        printf("%d ",b);
+      }
+      else if(c>=a&&c>=b){
+        printf("%d ",c);
     
-    scanf(" %c",&ch);
-    if(ch>='0'&&ch<='9'){
+      }
         
-        printf("IS DIGIT");
-    } 
-    else if(ch>='A'&&ch<='B'){
-       
-      printf("ALPHA\n");
-      printf("IS CAPITAL");
-    }
-    else{
-         printf("ALPHA\n");
-          printf("IS SMALL");
-    }
-
-
-
-    return 0;
+   return 0;
 
 }
