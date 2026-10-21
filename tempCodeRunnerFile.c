@@ -1,32 +1,18 @@
 #include <stdio.h>
-int main(){
-  int a , b , c;
-  scanf("%d %d %d",&a,&b,&c);
-  //min
-   if(a<=b && a<=c ){
-    printf("%d ",a);
-   }
-   
- else if(b<=a&&b<=c){
-        printf("%d ",b);
-      }
- else if(c<=a&&c<=b){
-        printf("%d ",c);
-      }
-
-      //max valu
- if(a>=b && a>=c ){
-    printf("%d ",a);
-   }
-   
- else if(b>=a&&b>=c){
-        printf("%d ",b);
-      }
-      else if(c>=a&&c>=b){
-        printf("%d ",c);
-    
-      }
-        
-   return 0;
+    int main(){
+    int t;
+    scanf("%d ",&t);
+    for(int i=1;i<=t;i++){
+        int n;
+        scanf("%d ",&n);
+        while(n!=0){
+         printf("%d ", n%10);
+         n=n/10;
+    }
+    printf("\n");
 
 }
+    
+
+ }
+  
