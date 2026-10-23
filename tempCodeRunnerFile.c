@@ -1,18 +1,29 @@
 #include <stdio.h>
     int main(){
-    int t;
-    scanf("%d ",&t);
-    for(int i=1;i<=t;i++){
-        int n;
-        scanf("%d ",&n);
-        while(n!=0){
-         printf("%d ", n%10);
-         n=n/10;
+
+    int a,b,c,d;
+    scanf("%d %d %d %d %d ",&a,&b,&c,&d);
+    if(a+b*c==d){
+        printf("YES");
     }
-    printf("\n");
+    else if(a*b+c==d){
+        printf("YES");
+    }
+    else if(a-b+c==d){
+        printf("YES");
+    } 
+    else if(a+b-c==d){
+        printf("YES");
+    } 
+    else if(a*b-c==d){
+        printf("YES");
+    } 
+    else if(a-b*c==d){
+        printf("YES");
+    } 
+    else {
+        printf("NO");
+    }
+    return 0;
 
-}
-    
-
- }
-  
+    }
